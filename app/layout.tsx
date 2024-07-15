@@ -8,7 +8,7 @@ import { extractRouterConfig } from "uploadthing/server";
 import { Toaster } from "sonner";
 import AuthProvider from "@/components/AuthProvider";
 
-const poppins = Inter({ subsets: ["latin"] });
+import { inter } from "./fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={poppins.className}>
+      <body className={inter.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
