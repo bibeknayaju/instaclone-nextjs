@@ -3,15 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "vercel-build": "prisma generate && prisma migrate deploy && next build",
-    "prisma:generate": "prisma generate",
-    "build": "GENERATE_SOURCEMAP=false  next build",
-    "dev": "next dev ",
-    "lint": "next lint",
-    "prettier": "prettier --write --ignore-unknown .",
-    "prettier:check": "prettier --check --ignore-unknown .",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
-    "find:unused": "next-unused",
+    "lint": "next lint",
     "postinstall": "prisma generate"
   },
   "dependencies": {
